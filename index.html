@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Eduardo Quirarte | Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Jose Eduardo Quirarte Arce</h1>
+            <p class="tagline">Desarrollador Backend Java | Enfocado en Microservicios</p>
+            <div class="links">
+              <a href="https://github.com/JEduardo001" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/eduardo-arce-129388335/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="CV-JOSE-QUIRARTE.pdf" download class="cv-button"><i class="fas fa-file-download"></i> Descargar CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="card animate-fade">
+            <h2><i class="fas fa-user"></i> Sobre mí</h2>
+            <p>Desarrollador Backend en formación con sólida base en el ecosistema Spring. Me apasiona construir flujos de datos eficientes y entender la complejidad de los sistemas distribuidos.</p>
+        </section>
+
+        <section class="card animate-fade">
+            <h2><i class="fas fa-project-diagram"></i> Proyectos Destacados</h2>
+            
+            <div class="project">
+                <div class="project-header">
+                    <h3>Sistema de Pedidos (Microservices Architecture)</h3>
+                    <div class="project-actions">
+                        <a href="https://github.com/JEduardo001/OrdersUberEats-Main-repo" target="_blank" class="repo-link">
+                            <i class="fab fa-github"></i> Ver Repositorio
+                        </a>
+                        <span class="badge">Backend</span>
+                    </div>
+                </div>
+                
+                <p class="project-description">
+                    Arquitectura distribuida para la gestión de pedidos, usuarios y productos. Utiliza una coreografía de eventos para mantener la consistencia entre servicios de forma asíncrona.
+                </p>
+
+                <div class="architecture-diagram-container">
+                    <img src="diagrama.png" alt="Flujo de Microservicios" class="architecture-img">
+                    <p class="img-caption">Diagrama de flujo de conexión. Más diagramas de procesos en repositorio</p>
+                </div>
+                
+                <div class="architecture-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <strong>Consistencia de Datos</strong>
+                        <p>Implementación de <strong>Saga Pattern</strong> (Coreografiado) y <strong>Outbox Pattern</strong> para transaccionalidad segura.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-shield-virus"></i>
+                        <strong>Resiliencia</strong>
+                        <p>Manejo de <strong>Idempotencia</strong> con tablas de control y gestión de errores mediante <strong>Dead Letter Queues (DLQ)</strong>.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-eye"></i>
+                        <strong>Observabilidad</strong>
+                        <p>Stack de monitoreo con <strong>Loki, Promtail y Grafana</strong> para centralización de logs y métricas.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-network-wired"></i>
+                        <strong>Infraestructura</strong>
+                        <p>Uso de <strong>Kafka</strong> para mensajería, <strong>Eureka</strong> para descubrimiento y <strong>Gateway</strong> como punto de entrada único.</p>
+                    </div>
+                </div>
+                <div class="tech-stack-tags" id="tags-ms"></div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>Gestión de Inventario (Monolito)</h3>
+                    <a href="https://github.com/JEduardo001/OptiRouteTracker_backend" target="_blank" class="repo-link">
+                            <i class="fab fa-github"></i> Ver Repositorio Backend
+                    </a>
+                    <a href="https://github.com/JEduardo001/OptiRouteTracker_front" target="_blank" class="repo-link">
+                            <i class="fab fa-github"></i> Ver Repositorio Frontend
+                    </a>
+
+                    <span class="badge">CRUD</span>
+                </div>
+
+                <div class="architecture-diagram-container">
+                    <img src="FrontOptiRouteTracker.png" alt="Flujo de Microservicios" class="architecture-img">
+                    <p class="img-caption">Imagen del Frontend</p>
+                </div>
+               
+
+                <p class="project-description">Aplicación robusta enfocada en la lógica de negocio sólida para el control de stock y almacenes.</p>
+                <div class="tech-stack-tags" id="tags-mono"></div>
+            </div>
+        </section>
+
+        <section class="card animate-fade">
+            <h2><i class="fas fa-tools"></i> Stack Tecnológico</h2>
+            <div class="skills-grid" id="skills-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jose Eduardo Quirarte Arce &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
